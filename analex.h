@@ -1,10 +1,24 @@
 #ifndef ANALEX
 #define ANALEX 
-#define TAM_MAX_LEXEMA 31
+#define TAM_MAX_LEXEMA 50
 
 typedef
-	enum{PR=1, CT_I, SN, CT_R, CT_L, ID}
-	categoria;
+	enum{PVR=1, CT_I, SN, CT_R, CT_C, ID, FA, LT, FE
+	}categoria;
+	//pvr: palavra reservada || ct_i: constante inteira || sn: sinal || ct_r: constante real
+	//ct_c: constante char || id: identificador || FA: fim do arquivo || LT: literal
+	//fe: fim da expressão ------duvida-------
+	
+typedef
+	enum{DIV=1, ADI, SUB, MUL, AND, EN, OU, MAQ, MAIQ, MEQ, MEIQ, IGUAL, ATRIB, DIF, NEG,
+	APAR, FPAR, ACOL, FCOL, ACH, FCH, VIRG
+	}sinal;
+	
+typedef
+	enum{CONST=1, PR, INIT, ENDP, CHAR, INT, REAL, BOOL, DO, WHILE, ENDW, VAR, FROM,
+	TO, DT, BY, IF, ENDV, ELIF, ELSE, ENDI, GETOUT, GETINT, GETREAL, GETCHAR, PUTINT, 
+	PUTCHAR, PUTREAL
+	}palavra_reservada;
 	
 typedef 
 	struct{  
