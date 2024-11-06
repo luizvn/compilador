@@ -1,0 +1,67 @@
+"luiz"
+'X'
+78.521
+78_lc_
+identificador // ID
+    // tab
+
+
+while // PVR
+"teste"
+
+'\n'
+idasc_
+
+// SINAIS
++ 
+'\0'
+- 
+/ 
+= // atrib
+! // neg
+* 
+& 
+&& 
+|| 
+< // menor que
+
+"baba"
+> // maior que
+== // igual
+!= // diferente
+<= // menor ou igual que
+>= // maior ou igual que
+( // abre parenteses
+) // fecha parenteses
+{ // abre chaves
+} // fecha chaves
+[ // abre colchetes
+] // fecha colchetes
+, 
+15 
+
+WHILE // PVR
+
+
+
+
+init
+    //comentarioo
+    'a' 
+    real palavra = 1.09
+    int a = 102
+    int b = 56341
+    int c = a + b
+    int arraySuper[18]
+    char _v = 'a'    
+    char frase = "calica"
+    real flutuante = 9.1
+
+    while (c >= a)
+        if b + a + 1 > c
+        getint 8
+        endi
+    endw
+    '\n'
+    var loop from array to &outroArray by numero endv
+    char a //comentario final
