@@ -30,10 +30,6 @@ TOKEN AnaLex(FILE *fd){
 	 char digitos[TAM_NUM] = "";
 	 int tamD = 0;
 	 TOKEN t;
-
-	 
-	 char pv_reservadas[28][28] = {"const", "pr", "init", "endp", "char", "real", "int", "bool", "do", "while", 
-	 "endw", "var", "from", "dt", "to", "by", "if", "endv", "elif", "else", "endi", "getout", "putreal", "getint", "getreal", "getchar", "putint", "putchar"};
 	 
 	 while(1)
 	 {

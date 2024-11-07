@@ -15,10 +15,14 @@
 	};
 	
 
-	enum palavra_reservada{CONST=1, PR, INIT, ENDP, CHAR, INT, REAL, BOOL, DO, WHILE, ENDW, VAR, FROM,
+	enum palavra_reservada{CONST, PR, INIT, ENDP, CHAR, INT, REAL, BOOL, DO, WHILE, ENDW, VAR, FROM,
 	TO, DT, BY, IF, ENDV, ELIF, ELSE, ENDI, GETOUT, GETINT, GETREAL, GETCHAR, PUTINT, 
 	PUTCHAR, PUTREAL
 	};
+	
+	char pv_reservadas[28][28] = {"const", "pr", "init", "endp", "char", "real", "int", "bool", "do", "while", 
+	 "endw", "var", "from", "dt", "to", "by", "if", "endv", "elif", "else", "endi", "getout", "putreal", "getint",
+	 "getreal", "getchar", "putint", "putchar"};
 	
 typedef 
 	struct{  
