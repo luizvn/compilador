@@ -8,7 +8,7 @@
 #define TAM_NUM 20 
 
 void error(char msg[]) { 
-	printf("%s Linha: %d\n", msg, contLinha);
+	printf("%s na Linha: %d\n", msg, contLinha);
 	exit(1);
 } 
 
@@ -375,12 +375,7 @@ TOKEN AnaLex(FILE *fd){
 				}
 			 break;
 		 	 case 17:
-		 	 	if((isprint(c) != 0) && (c != '\n'))
-				{
-					//printf("caracter");
-					estado = 17;
-				}
-				else if(c == '\n')
+		 	 	if(c == '\n')
 				{
 					contLinha++;
 					estado = 0;
@@ -392,7 +387,7 @@ TOKEN AnaLex(FILE *fd){
 				}
 				else
 				{
-					error("caracter invalido!");
+					estado = 17;
 				}
 			 break;
 		 	 case 25:

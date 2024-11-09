@@ -64,4 +64,4 @@ init
     endw
     '\n'
     var loop from array to &outroArray by numero endv
-    char a //comentario final
+    char a* //comentario final
